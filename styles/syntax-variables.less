@@ -4,46 +4,57 @@
 // include a syntax-variables.less file.
 
 // General colors
-@syntax-text-color: @very-very-light-gray;
-@syntax-cursor-color: white;
-@syntax-selection-color: @dark-blue;
-@syntax-selection-flash-color: white;
-@syntax-background-color: @very-dark-gray;
+@syntax-color-general-text: @very-very-light-gray;
+@syntax-color-general-cursor: white;
+@syntax-color-general-selection: @dark-blue;
+@syntax-color-general-selection-flash: white;
+@syntax-color-general-background: @very-dark-gray;
+@syntax-color-general-error: @red;
 
 // Guide colors
-@syntax-wrap-guide-color: @transparent-gray;
-@syntax-indent-guide-color: @translucent-gray;
-@syntax-invisible-character-color: @translucent-gray;
+@syntax-color-guide-wrap: @transparent-gray;
+@syntax-color-guide-indent: @translucent-gray;
+@syntax-color-guide-invisible-character: @translucent-gray;
 
 // For find and replace markers
-@syntax-result-marker-color: @gray;
-@syntax-result-marker-color-selected: white;
+@syntax-color-result-marker: @gray;
+@syntax-color-result-marker-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @blue-green;
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: lighten(@syntax-background-color, 5%);
-@syntax-gutter-background-color-selected: @transparent-white;
+@syntax-color-gutter-text: @blue-green;
+@syntax-color-gutter-text-selected: @syntax-color-gutter-text;
+@syntax-color-gutter-background: @syntax-color-general-background;
+@syntax-color-gutter-background-selected: @transparent-white;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @light-blue;
-@syntax-color-added: @light-green;
-@syntax-color-modified: @light-orange;
-@syntax-color-removed: @red;
+@syntax-color-git-renamed: @light-blue;
+@syntax-color-git-added: @light-green;
+@syntax-color-git-modified: @light-orange;
+@syntax-color-git-removed: @red;
 
 // For language entity colors
-@syntax-color-variable: @light-blue;
-@syntax-color-constant: @green;
-@syntax-color-property: @very-very-light-gray;
-@syntax-color-value: @light-yellow;
-@syntax-color-function: @dark-yellow;
-@syntax-color-method: @syntax-color-function;
-@syntax-color-class: @light-blue;
-@syntax-color-keyword: @light-blue;
-@syntax-color-tag: @light-blue;
-@syntax-color-attribute: @light-purple;
-@syntax-color-import: @syntax-color-keyword;
-@syntax-color-snippet: @syntax-color-constant;
+@syntax-color-default-variable: @light-blue;
+@syntax-color-default-constant: @blue;
+@syntax-color-default-number: @light-green;
+@syntax-color-default-property: @very-very-light-gray;
+@syntax-color-default-value: @light-yellow;
+@syntax-color-default-function: @dark-yellow;
+@syntax-color-default-method: @syntax-color-default-function;
+@syntax-color-default-class: @light-blue;
+@syntax-color-default-keyword: @blue;
+@syntax-color-default-tag: @light-blue;
+@syntax-color-default-attribute: @light-blue;
+@syntax-color-default-import: @syntax-color-default-keyword;
+@syntax-color-default-snippet: @syntax-color-default-constant;
+@syntax-color-default-punctuation-tag: @gray;
+@syntax-color-default-punctuation-bold: @light-orange;
+@syntax-color-default-punctuation-italic: @purple;
+@syntax-color-default-string: @syntax-color-general-text;
+@syntax-color-default-regex: @brown;
+@syntax-color-default-comment: @dark-green;
 
+// js specific
+@syntax-color-js-string: @tan;
 
-@syntax-color-comment: @dark-green;
+// css
+@syntax-color-css-class: @dark-yellow;
